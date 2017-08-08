@@ -1,0 +1,30 @@
+@import './variables.scss';
+// grid container
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  .col {
+    flex: 0 1 100%;
+  }
+  @each $key,
+  $value in $breakpoints {
+    @media (min-width: $value) {
+      @for $i from 1 through $grid-items {
+        .col.#{$key}#{$i} {
+          flex: 0 0 percentage($i / $grid-items);
+        }
+      }
+    }
+  }
+}
+
+// responsive breakpoints
+@each $key,
+$value in $breakpoints {
+  .show-#{$key} {
+    display: none;
+    @media (min-width: $value) {
+      display: unset;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "small-grid",
+  "version": "1.0.0",
+  "description": "A small responsive grid framework.",
+  "style": "small-grid.css",
+  "devDependencies": {
+    "node-sass": "^4.5.3"
+  },
+  "scripts": {
+    "build": "node-sass --output-style compressed -o dist scss/small-grid.scss",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "small",
+    "grid",
+    "responsive",
+    "framework",
+    "css",
+    "scss"
+  ],
+  "author": "Jacob Ebey",
+  "license": "ISC"
+}
