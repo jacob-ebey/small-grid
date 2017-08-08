@@ -11,7 +11,7 @@ npm install small-grid
 ## How to use
 
 ```typescript
-import 'small-grid';
+import 'small-grid/small-grid.css';
 ```
 
 Create a grid and add columns:
