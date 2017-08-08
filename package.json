@@ -1,8 +1,11 @@
 {
   "name": "small-grid",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A small responsive grid framework.",
-  "url": "https://github.com/jacob-ebey/small-grid",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jacob-ebey/small-grid"
+  },
   "style": "small-grid.css",
   "devDependencies": {
     "node-sass": "^4.5.3"
